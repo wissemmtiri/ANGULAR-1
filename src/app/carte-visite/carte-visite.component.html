@@ -1,0 +1,80 @@
+<h1 style="text-align: center">CARTE VISITE</h1>
+<div style="display: flex;">
+    <div id="card">
+        <div class="card-container">
+            <div class="card">
+                <div class="front">
+                    <div class="cover">
+                        <img src="../../assets/images/rotating_card_thumb.jpg" />
+                    </div>
+                    <div class="user">
+                        <img class="img-circle" src="../../assets/images/{{image}}.png" />
+                    </div>
+                    <div class="content">
+                        <div class="main">
+                            <h3 class="name">{{name}} {{firstname}}</h3>
+                            <p class="profession">{{job}}</p>
+
+                            <p class="text-center">{{quote}}</p>
+                        </div>
+                        <div class="footer">
+                            <div class="rating">
+                                <i class="fa fa-mail-forward"></i> Auto Rotation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="header">
+                        <h5 class="motto">"To be or not to be"</h5>
+                    </div>
+                    <div class="content">
+                        <div class="main">
+                            <h4 class="text-center">{{jobDescription}}</h4>
+                            <p class="text-center">{{jobKeywords}}
+                            </p>
+
+                            <div class="stats-container">
+                                <div class="stats">
+                                    <h4>235</h4>
+                                    <p>
+                                        Followers
+                                    </p>
+                                </div>
+                                <div class="stats">
+                                    <h4>114</h4>
+                                    <p>
+                                        Following
+                                    </p>
+                                </div>
+                                <div class="stats">
+                                    <h4>35</h4>
+                                    <p>
+                                        Projects
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="form">
+        <label for="name">Name</label><br>
+        <input id="name" [(ngModel)]="name"><br>
+        <label for="firstname">Firstname</label><br>
+        <input id="firstname" [(ngModel)]="firstname"><br>
+        <label for="image">Image</label><br>
+        <input id="image" [(ngModel)]="image"><br>
+        <label for="job">Job</label><br>
+        <input id="job" [(ngModel)]="job"><br>
+        <label for="jobdesc">Job description</label><br>
+        <input id="jobdesc" [(ngModel)]="jobDescription"><br>
+        <label for="jobkeys">Job Keywords</label><br>
+        <input id="jobkeys" [(ngModel)]="jobKeywords"><br>
+        <label for="quote">Quote</label><br>
+        <input id="quote" [(ngModel)]="quote"><br>
+    </div>
+</div>

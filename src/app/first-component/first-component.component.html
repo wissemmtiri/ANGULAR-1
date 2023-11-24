@@ -1,0 +1,7 @@
+<hr>
+<h3>{{ name }}</h3>
+<h3>{{ age }}</h3>
+<hr>
+<input #name_field [value]="getName()">
+<button (click)="setName(name_field.value)">Modify name</button>
+<hr>

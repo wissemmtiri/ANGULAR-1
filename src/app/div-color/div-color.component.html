@@ -1,0 +1,4 @@
+<h3>CHANGE THE BACKGROUND COLOR</h3>
+<input type="text" [(ngModel)]="colorInput" (input)="changeColor()">
+<div [style.backgroundColor]="bgcolor"></div>
+<button (click)="resetColor()">RESET COLOR</button>
